@@ -1,0 +1,52 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+
+public class LeapYear {
+
+	public static void main(String args[]){
+		
+		 InputStreamReader reader = new InputStreamReader(System.in);
+		 BufferedReader ipyear = new BufferedReader(reader);
+		 try
+		 {
+	      System.out.println("Please Enter Your year: ");
+		  String year = ipyear.readLine();
+		  int yr = Integer.parseInt(year);
+		  
+		  if(yr%100==0)
+		  {
+		    if(yr%400==0)
+		    {
+		    	System.out.println("Given year is leap year!!");
+		    }
+		    else
+		    {
+		    	System.out.println("Given year is leap year!!");
+		    }
+		  }
+		  
+		  else if(yr%4==0)
+		  {
+			  System.out.println("Given year is leap year");
+		  }
+		  
+		  else
+		  {
+			  System.out.println("Given year is not a leap year");
+		  }
+		  
+		 }
+		 
+		 catch(IOException err)
+		 {
+			 System.out.println("Input is not correct");
+		 }
+		 
+		 catch(NumberFormatException err) {
+             System.out.println("Error Converting Number!!!");
+        }	
+		
+	}
+}
