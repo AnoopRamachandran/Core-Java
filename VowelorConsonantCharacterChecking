@@ -1,0 +1,43 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+
+public class CharacterChecking {
+	
+	public static void main(String args[])
+	{
+		 InputStreamReader reader = new InputStreamReader(System.in);
+		 BufferedReader inpt1 = new BufferedReader(reader);
+		 try
+		 {
+	      System.out.println("Enter the character: ");
+		  String inpt = inpt1.readLine();
+		  //String inputchar = String.valueOf(inpt);
+		  
+		  if(inpt.equals("a")||inpt.equals("e")||inpt.equals("i")
+				  ||inpt.equals("o")||inpt.equals("u")||inpt.equals("A")||inpt.equals("E")||inpt.equals("I")
+				  ||inpt.equals("O")||inpt.equals("U"))
+		  {
+			  System.out.println(inpt+' ' +" is a vowel");
+		   
+		  }
+		  
+		  else
+		  {
+			  System.out.println(inpt+' '+"is a consonant");
+		  }
+		 
+		 }
+		 
+		 catch(IOException err)
+		 {
+			 System.out.println("Please give the age in numbers");
+		 }
+		 
+		 catch(NumberFormatException err) {
+             System.out.println("Error Converting Number!!!");
+        }	
+	}
+
+}
