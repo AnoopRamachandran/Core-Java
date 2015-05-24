@@ -1,0 +1,77 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+public class DaysInMonth {
+
+	public static void main(String args[]) throws IOException
+	{
+		//int year;
+		String Month;
+		System.out.print("Enter the month:");
+		InputStreamReader isr = new InputStreamReader(System.in);
+		BufferedReader mth = new BufferedReader(isr);
+		Month=mth.readLine();
+		try
+		{
+			switch(Month)
+			{
+			case "January":
+				System.out.println("31");
+				break;
+				
+			case "Febrauary":
+				System.out.println("28 or 29");
+				break;
+				
+			case "March":
+				System.out.println("31");
+				break;
+				
+			case "April":
+				System.out.println("30");
+				break;
+				
+			case "May":
+				System.out.println("31");
+				break;	
+				
+			case "June":
+				System.out.println("30");
+				break;	
+				
+			case "July":
+				System.out.println("31");
+				break;
+				
+			case "August":
+				System.out.println("31");
+				break;
+				
+			case "September":
+				System.out.println("30");
+				break;	
+				
+			case "October":
+				System.out.println("31");
+				break;
+				
+			case "November":
+				System.out.println("30");
+				break;	
+				
+			case "December":
+				System.out.println("31");
+				break;	
+				
+				default : 
+					System.out.println("Please enter month in characters");
+			
+			}
+			
+		}
+		catch(NumberFormatException err)
+		{
+			System.out.println("");
+		}
+	}
+}
