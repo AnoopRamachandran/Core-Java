@@ -1,0 +1,45 @@
+
+public class PrimeNumber {
+	
+	public static void main(String args[]){
+		
+	System.out.println("Input is prime number..");	
+	for(int inpt=1; inpt<101;inpt++)
+	{	
+		
+		int flag=0;
+		for(int i=2; i<101;i++)
+		{
+			if(inpt==i)
+			{
+				i++;
+			}
+			
+			else if(inpt%i==0)
+			{
+			    flag=1;
+			    break;
+				
+				//System.out.println("Prime numbers are:" +inpt);
+				// break;			
+			}
+		}
+			 if(flag==0)
+		     {
+			  System.out.print(inpt+" ");
+		     }
+		  
+		//  else
+		  //{
+			//  System.out.println("Input is not a prime number.."+inpt);			  
+		  //}
+			
+		}
+		
+		
+		}
+	}
+
+	//	int i;
+		
+		
